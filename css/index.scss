@@ -1,0 +1,338 @@
+body {
+  background-color: #fff;
+}
+
+
+
+
+// ctrl+\
+
+/* 头部工具栏 */
+.top_tool {
+  .row {
+    >div {
+      border-bottom: 1px solid #000;
+      border-left: 1px solid #000;
+      height: 40px;
+      line-height: 40px;
+      text-align: center;
+
+      a {
+        color: #808080;
+      }
+
+      .btn {
+        color: #fff;
+      }
+
+      .phone {
+        position: relative;
+
+        img {
+          position: absolute;
+          z-index: 10;
+          top: 18px;
+          left: -7px;
+          display: none;
+        }
+
+        &:hover img {
+          display: block;
+        }
+      }
+
+    }
+
+    >div:first-child {
+      border-left: none;
+    }
+  }
+
+}
+
+/* 导航条 */
+#wjsnav {
+  .navbar {
+    margin-bottom: 0;
+  }
+
+  .navbar-brand {
+    padding-top: 6px;
+
+    .wjsfont {
+      font-size: 70px;
+    }
+
+    .wjsfont-logo {
+      color: red;
+    }
+  }
+
+  a {
+    height: 80px;
+    line-height: 80px;
+    padding-top: 0;
+    padding-bottom: 0;
+
+    &:hover,
+    &:focus {
+      // 获得焦点
+      border-bottom: 1px solid red;
+    }
+  }
+}
+
+
+/* 轮播图 */
+.wjs_slides {
+  img {
+    width: 100%;
+  }
+}
+
+
+
+/* 支付交易保障 */
+.exchange {
+  padding-top: 60px;
+  padding-bottom: 30px;
+
+  .row {
+    >div {
+      margin-bottom: 30px;
+
+      a {
+        color: #808080;
+        background-color: black;
+
+        &:hover {
+          color: red;
+        }
+
+        .wjsfont {
+          font-size: 40px;
+        }
+
+        .media-body {
+          .media-heading {
+            font-size: 22px;
+          }
+
+        }
+      }
+    }
+
+  }
+}
+
+
+/* 正在排队 */
+.waiting {
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  padding: 30px 0;
+
+  .pull-left {
+    a {
+      color: red;
+      border-bottom: 1px dashed red;
+    }
+  }
+
+  .pull-right {
+    a {
+      color: #000;
+    }
+  }
+}
+
+/* 微投资 */
+.wjs_buy {
+  .row>div{
+    padding: 20px 10px;
+  }
+  /* 默认卡片 灰色 .cart_default */
+  .cart_default {
+    /* 
+    页面的构成
+    1 块级元素是充当容器使用
+    2 行内元素是做页面的小标签 小的效果使用 
+      把a标签当成容器来使用了
+       行内很多问题 设置宽度和高度么有效果
+    3 要把a标签当成容器来使用 最好 变成块级元素
+      display:block;
+     */
+    display: block;
+    padding-right: 80px;
+    position: relative;
+    background-color: #f7f7f7;
+    color: #808080;
+
+    // 水平偏移 垂直偏移 模糊值 外延值 颜色 ？内外阴影
+    box-shadow: 0px 0 19px 0px #666;
+    .cart_main {
+      // background-color: yellow;
+      padding: 30px 10px 0;
+      //  currentColor 字体的颜色 
+      // color: black;
+      border-right: 1px dashed currentColor;
+      .cart_des {
+
+        .pull-left,
+        .pull-right {
+          >div {
+            padding-bottom: 5px;
+          }
+        }
+      }
+
+    }
+
+    .rate {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 80px;
+      height: 100%;
+      // background-color: lawngreen;
+      text-align: center;
+      padding-top: 70px;
+      // position: relative;
+      &::before{
+        content: "";
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: #fff;
+        top: -10px;
+        left: -10px;
+        box-shadow: 0 1px 0px 0px #ccc;
+      }
+      &::after{
+        content: "";
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: #fff;
+        bottom: -10px;
+        left: -10px;
+        box-shadow: 0 -1px 0px 0px #ccc;
+      }
+    }
+  }
+
+  /* 红色卡片 */
+  .cart_exp{
+    background-color: red;
+    color: #fff;
+    position: relative;
+    .wjsfont{
+      position: absolute;
+      top: 0;
+      left: 0;
+      font-size: 40px;
+    }
+  }
+
+  /* 灰色 进度条 */
+  .cart_progress{
+    .cart_main{
+      .pull-left{
+        width: 50%;
+      }
+      .pull-right{
+        width: 50%;
+      }
+    }
+    .rate{
+      .tips{
+        span:nth-child(1){
+          color: green;
+          // currentColor = 字体的颜色 
+          border: 1px solid currentColor;
+        }
+        // nth-child 和 nth-of-type的区别？？？？？
+        span:nth-of-type(2){
+          color: red;
+          // currentColor = 字体的颜色 
+          border: 1px solid currentColor;
+        }
+      }
+    }
+  }
+}
+
+
+
+/* 新闻 */
+.wjs_news{
+  // 全部新闻
+  .news{
+    font-size:30px ;
+    border-bottom: 1px solid #000;
+    position: relative;
+    &::before{
+      content: "";
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      border: 1px solid #000;
+      position: absolute;
+      bottom: -5px;
+      right: -10px;
+    }
+  }
+  // 标题
+  .news_title{
+    position: relative;
+    .line{
+      position: absolute;
+      top: 0;
+      left: 50px;
+      z-index: -1;
+      width: 0;
+      height: 400px;
+      border-left: 1px dashed #000;
+    }
+    ul{
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      li{
+       margin-bottom: 60px;
+        a{
+          // color: 
+          background-color: #cccccc;
+          // display: block;
+          display: inline-block;
+          border-radius: 50%;
+          padding: 10px;
+          color: #fff;
+          &:hover,&:focus{
+            background-color: red;
+          }
+          .wjsfont{
+            font-size: 50px;
+          }
+        }
+      }
+    }
+  }
+  // 内容
+  .news_content{}
+
+}
+
+.wjs_footer{
+  padding-top: 100px;
+  border-top: 1px solid #000;
+  h1{}
+  div{
+    a{
+      font-size: 80px;
+      margin-left: 20px;
+    }
+  }
+}

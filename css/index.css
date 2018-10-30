@@ -1,0 +1,292 @@
+@charset "UTF-8";
+body {
+  background-color: #fff;
+}
+
+/* 头部工具栏 */
+.top_tool .row > div {
+  border-bottom: 1px solid #000;
+  border-left: 1px solid #000;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+}
+
+.top_tool .row > div a {
+  color: #808080;
+}
+
+.top_tool .row > div .btn {
+  color: #fff;
+}
+
+.top_tool .row > div .phone {
+  position: relative;
+}
+
+.top_tool .row > div .phone img {
+  position: absolute;
+  z-index: 10;
+  top: 18px;
+  left: -7px;
+  display: none;
+}
+
+.top_tool .row > div .phone:hover img {
+  display: block;
+}
+
+.top_tool .row > div:first-child {
+  border-left: none;
+}
+
+/* 导航条 */
+#wjsnav .navbar {
+  margin-bottom: 0;
+}
+
+#wjsnav .navbar-brand {
+  padding-top: 6px;
+}
+
+#wjsnav .navbar-brand .wjsfont {
+  font-size: 70px;
+}
+
+#wjsnav .navbar-brand .wjsfont-logo {
+  color: red;
+}
+
+#wjsnav a {
+  height: 80px;
+  line-height: 80px;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+#wjsnav a:hover, #wjsnav a:focus {
+  border-bottom: 1px solid red;
+}
+
+/* 轮播图 */
+.wjs_slides img {
+  width: 100%;
+}
+
+/* 支付交易保障 */
+.exchange {
+  padding-top: 60px;
+  padding-bottom: 30px;
+}
+
+.exchange .row > div {
+  margin-bottom: 30px;
+}
+
+.exchange .row > div a {
+  color: #808080;
+  background-color: black;
+}
+
+.exchange .row > div a:hover {
+  color: red;
+}
+
+.exchange .row > div a .wjsfont {
+  font-size: 40px;
+}
+
+.exchange .row > div a .media-body .media-heading {
+  font-size: 22px;
+}
+
+/* 正在排队 */
+.waiting {
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  padding: 30px 0;
+}
+
+.waiting .pull-left a {
+  color: red;
+  border-bottom: 1px dashed red;
+}
+
+.waiting .pull-right a {
+  color: #000;
+}
+
+/* 微投资 */
+.wjs_buy {
+  /* 默认卡片 灰色 .cart_default */
+  /* 红色卡片 */
+  /* 灰色 进度条 */
+}
+
+.wjs_buy .row > div {
+  padding: 20px 10px;
+}
+
+.wjs_buy .cart_default {
+  /* 
+    页面的构成
+    1 块级元素是充当容器使用
+    2 行内元素是做页面的小标签 小的效果使用 
+      把a标签当成容器来使用了
+       行内很多问题 设置宽度和高度么有效果
+    3 要把a标签当成容器来使用 最好 变成块级元素
+      display:block;
+     */
+  display: block;
+  padding-right: 80px;
+  position: relative;
+  background-color: #f7f7f7;
+  color: #808080;
+  -webkit-box-shadow: 0px 0 19px 0px #666;
+          box-shadow: 0px 0 19px 0px #666;
+}
+
+.wjs_buy .cart_default .cart_main {
+  padding: 30px 10px 0;
+  border-right: 1px dashed currentColor;
+}
+
+.wjs_buy .cart_default .cart_main .cart_des .pull-left > div,
+.wjs_buy .cart_default .cart_main .cart_des .pull-right > div {
+  padding-bottom: 5px;
+}
+
+.wjs_buy .cart_default .rate {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 80px;
+  height: 100%;
+  text-align: center;
+  padding-top: 70px;
+}
+
+.wjs_buy .cart_default .rate::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #fff;
+  top: -10px;
+  left: -10px;
+  -webkit-box-shadow: 0 1px 0px 0px #ccc;
+          box-shadow: 0 1px 0px 0px #ccc;
+}
+
+.wjs_buy .cart_default .rate::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #fff;
+  bottom: -10px;
+  left: -10px;
+  -webkit-box-shadow: 0 -1px 0px 0px #ccc;
+          box-shadow: 0 -1px 0px 0px #ccc;
+}
+
+.wjs_buy .cart_exp {
+  background-color: red;
+  color: #fff;
+  position: relative;
+}
+
+.wjs_buy .cart_exp .wjsfont {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 40px;
+}
+
+.wjs_buy .cart_progress .cart_main .pull-left {
+  width: 50%;
+}
+
+.wjs_buy .cart_progress .cart_main .pull-right {
+  width: 50%;
+}
+
+.wjs_buy .cart_progress .rate .tips span:nth-child(1) {
+  color: green;
+  border: 1px solid currentColor;
+}
+
+.wjs_buy .cart_progress .rate .tips span:nth-of-type(2) {
+  color: red;
+  border: 1px solid currentColor;
+}
+
+/* 新闻 */
+.wjs_news .news {
+  font-size: 30px;
+  border-bottom: 1px solid #000;
+  position: relative;
+}
+
+.wjs_news .news::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 1px solid #000;
+  position: absolute;
+  bottom: -5px;
+  right: -10px;
+}
+
+.wjs_news .news_title {
+  position: relative;
+}
+
+.wjs_news .news_title .line {
+  position: absolute;
+  top: 0;
+  left: 50px;
+  z-index: -1;
+  width: 0;
+  height: 400px;
+  border-left: 1px dashed #000;
+}
+
+.wjs_news .news_title ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.wjs_news .news_title ul li {
+  margin-bottom: 60px;
+}
+
+.wjs_news .news_title ul li a {
+  background-color: #cccccc;
+  display: inline-block;
+  border-radius: 50%;
+  padding: 10px;
+  color: #fff;
+}
+
+.wjs_news .news_title ul li a:hover, .wjs_news .news_title ul li a:focus {
+  background-color: red;
+}
+
+.wjs_news .news_title ul li a .wjsfont {
+  font-size: 50px;
+}
+
+.wjs_footer {
+  padding-top: 100px;
+  border-top: 1px solid #000;
+}
+
+.wjs_footer div a {
+  font-size: 80px;
+  margin-left: 20px;
+}

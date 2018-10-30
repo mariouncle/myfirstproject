@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1,minimum-scale=1,user-scalable=no">
+  <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+  <title>Bootstrap 101 Template</title>
+
+  <link rel="stylesheet" href="./lib/css/bootstrap.css">
+  <link rel="stylesheet" href="./css/wjsfont.css">
+  <link rel="stylesheet" href="./css/index.css">
+
+  <!-- HTML5 shim 和 Respond.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 -->
+  <!-- 警告：通过 file:// 协议（就是直接将 html 页面拖拽到浏览器中）访问页面时 Respond.js 不起作用 -->
+  <!--[if lt IE 9]>
+      <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+  <!-- 头部工具栏 lg md 2 5 2 3  sm xs hidden 辅助类   -->
+  <div class="top_tool hidden-sm hidden-xs">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-2 col-md-2">
+          <a class="phone" href="javascript:;">
+            <!-- ctrl q 可以选择到标签 引号 和 代码块 里面的内容  -->
+            <span class="glyphicon glyphicon-phone" aria-hidden="true"></span>
+            手机微金所
+            <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
+            <img src="./images/code.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-lg-5 col-md-5">
+          <a href="javascript:;"> <span class="glyphicon glyphicon-phone-alt" aria-hidden="true"></span>
+            4006-89-4006（服务时间：9:00-21:00)</a>
+        </div>
+        <div class="col-lg-2 col-md-2">
+
+          <a href="javascript:;">常见问题</a>
+          <a href="javascript:;">财富登陆</a>
+        </div>
+        <div class="col-lg-3 col-md-3">
+          <a class="btn btn-danger" href="javascript:;">免费注册</a>
+          <a href="javascript:;">登录</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 导航条 -->
+  <div id="wjsnav">
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+            aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">
+            <span class="wjsfont wjsfont-logo"></span>
+            <span class="wjsfont wjsfont-name"></span>
+          </a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li><a href="#">我要投资</a></li>
+            <li><a href="#">我要借贷</a></li>
+            <li><a href="#">平台介绍</a></li>
+            <li><a href="#">新手专区</a></li>
+            <li><a href="#">最新动态</a></li>
+            <li><a href="#">微平台</a></li>
+          </ul>
+
+          <ul class="nav navbar-nav navbar-right hidden-sm hidden-xs">
+            <li><a href="#">个人中心</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+  </div>
+
+  <!-- 轮播图 -->
+  <!-- 
+    大图 只在极小屏幕隐藏  辅助类 hidden-xs。。。。
+    小图片 在大屏幕下 和中屏幕 小屏幕 隐藏
+            hidden-lg hidden-md hidden-sm 
+    
+   -->
+  <div class="wjs_slides">
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+      </ol>
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <a class="hidden-xs" href="javascript:;"> <img src="./images/slide_01_2000x410.jpg" alt=""> </a>
+          <a class="hidden-lg hidden-md hidden-sm" href="javascript:;"> <img src="./images/slide_01_640x340.jpg" alt="">
+          </a>
+        </div>
+        <div class="item">
+          <a class="hidden-xs" href="javascript:;"> <img src="./images/slide_02_2000x410.jpg" alt=""> </a>
+          <a class="hidden-lg hidden-md hidden-sm" href="javascript:;"> <img src="./images/slide_02_640x340.jpg" alt="">
+          </a>
+        </div>
+        <div class="item">
+          <a class="hidden-xs" href="javascript:;"> <img src="./images/slide_03_2000x410.jpg" alt=""> </a>
+          <a class="hidden-lg hidden-md hidden-sm" href="javascript:;"> <img src="./images/slide_03_640x340.jpg" alt="">
+          </a>
+        </div>
+        <div class="item">
+          <a class="hidden-xs" href="javascript:;"> <img src="./images/slide_04_2000x410.jpg" alt=""> </a>
+          <a class="hidden-lg hidden-md hidden-sm" href="javascript:;"> <img src="./images/slide_04_640x340.jpg" alt="">
+          </a>
+        </div>
+
+      </div>
+
+      <!-- Controls -->
+      <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+
+  </div>
+
+  <!-- 支付交易保障 -->
+  <div class="exchange hidden-xs">
+    <!-- lg md 4 sm 6 xs hidden  -->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-6">
+          <a href="javascript:;">
+            <div class="media">
+              <div class="media-left">
+                <span class="wjsfont wjsfont-e901"></span>
+              </div>
+              <div class="media-body">
+                <h4 class="media-heading"> 支付交易保障</h4>
+                银联支付全称保证支付安全
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-6">
+          <a href="javascript:;">
+            <div class="media">
+              <div class="media-left">
+                <span class="wjsfont wjsfont-e901"></span>
+              </div>
+              <div class="media-body">
+                <h4 class="media-heading"> 支付交易保障</h4>
+                银联支付全称保证支付安全
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-6">
+          <a href="javascript:;">
+            <div class="media">
+              <div class="media-left">
+                <span class="wjsfont wjsfont-e901"></span>
+              </div>
+              <div class="media-body">
+                <h4 class="media-heading"> 支付交易保障</h4>
+                银联支付全称保证支付安全
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-6">
+          <a href="javascript:;">
+            <div class="media">
+              <div class="media-left">
+                <span class="wjsfont wjsfont-e901"></span>
+              </div>
+              <div class="media-body">
+                <h4 class="media-heading"> 支付交易保障</h4>
+                银联支付全称保证支付安全
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-6">
+          <a href="javascript:;">
+            <div class="media">
+              <div class="media-left">
+                <span class="wjsfont wjsfont-e901"></span>
+              </div>
+              <div class="media-body">
+                <h4 class="media-heading"> 支付交易保障</h4>
+                银联支付全称保证支付安全
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-6">
+          <a href="javascript:;">
+            <div class="media">
+              <div class="media-left">
+                <span class="wjsfont wjsfont-e901"></span>
+              </div>
+              <div class="media-body">
+                <h4 class="media-heading"> 支付交易保障</h4>
+                银联支付全称保证支付安全
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- 正在排队 -->
+  <div class="waiting">
+    <div class="container">
+      <!-- 左 -->
+      <div class="pull-left">
+        <span class="glyphicon glyphicon-time"></span> 现在有 273 人在排队，累计预约交易成功 7571 次。 什么是预约投标？
+        <a href="javascript:;">立即预约</a>
+      </div>
+      <!-- 右 -->
+      <div class="pull-right hidden-xs">
+        <a href="javascript:;">
+          <span class="glyphicon glyphicon-camera"></span>
+          微金所企业宣传片
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- 微投资 -->
+  <div class="wjs_buy">
+    <div>
+
+      <!-- Nav tabs -->
+      <ul class="nav nav-tabs" role="tablist">
+        <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">特别推荐</a></li>
+        <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>
+        <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Messages</a></li>
+        <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Settings</a></li>
+      </ul>
+
+      <!-- Tab panes -->
+      <div class="tab-content">
+        <div role="tabpanel" class="tab-pane active" id="home">
+          <!-- lg md 4 sm 6 xs 12 -->
+          <div class="container-fluid">
+            <div class="row">
+              <!-- 灰色 默认 .cart_default -->
+              <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                <a class="cart_default" href="javascript:;">
+                  <!-- 左侧 主要内容 宽度 变化的 -->
+                  <!-- ctrl +shift + . -->
+                  <div class="cart_main">
+                    <!-- text-center 文本中间显示   -->
+                    <h4 class="text-center">新手体验1002期</h4>
+                    <div class="cart_des clearfix">
+                      <!-- 左 -->
+                      <div class="pull-left">
+                        <div>起投金额</div>
+                        <div>0.01万</div>
+                        <div>借款期限</div>
+                        <div>10天</div>
+                      </div>
+                      <!-- 右 -->
+                      <div class="pull-right text-right">
+                        <div>起投金额</div>
+                        <div>0.01万</div>
+                        <div>借款期限</div>
+                        <div>10天</div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 右侧 年利率 固定死高度和高度 -->
+                  <div class="rate">
+                    <div>8</div>
+                    <div>年利率</div>
+                  </div>
+                </a>
+              </div>
+              <!-- 红色 体验.cart_exp -->
+              <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                <a class="cart_default cart_exp" href="javascript:;">
+                  <span class="wjsfont wjsfont-e915"></span>
+                  <!-- 左侧 主要内容 宽度 变化的 -->
+                  <div class="cart_main">
+                    <!-- text-center 文本中间显示   -->
+                    <h4 class="text-center">新手体验1002期</h4>
+                    <div class="cart_des clearfix">
+                      <!-- 左 -->
+                      <div class="pull-left">
+                        <div>起投金额</div>
+                        <div>0.01万</div>
+                        <div>借款期限</div>
+                        <div>10天</div>
+                      </div>
+                      <!-- 右 -->
+                      <div class="pull-right text-right">
+                        <div>起投金额</div>
+                        <div>0.01万</div>
+                        <div>借款期限</div>
+                        <div>10天</div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 右侧 年利率 固定死高度和高度 -->
+                  <div class="rate">
+                    <div>8</div>
+                    <div>年利率</div>
+                  </div>
+                </a>
+              </div>
+
+              <!-- 灰色 进度条 .cart_progress -->
+              <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                <a class="cart_default cart_progress" href="javascript:;">
+                  <!-- 左侧 主要内容 宽度 变化的 -->
+                  <div class="cart_main">
+                    <!-- text-center 文本中间显示   -->
+                    <h4 class="text-center">新手体验1002期</h4>
+                    <div class="cart_des clearfix">
+                      <!-- 左 -->
+                      <div class="pull-left">
+                        <div>起投金额</div>
+                        <div>0.01万</div>
+                        <div>借款期限</div>
+                        <div>10天</div>
+                      </div>
+                      <!-- 右 -->
+                      <div class="pull-right text-right">
+                        <div>起投金额</div>
+                        <div>0.01万</div>
+                        <div>借款期限</div>
+                        <div>
+                          <div class="progress">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0"
+                              aria-valuemax="100" style="width: 60%;">
+                              60%
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 右侧 年利率 固定死高度和高度 -->
+                  <div class="rate">
+                    <div class="tips">
+                      <!-- <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Tooltip on top</button> -->
+                      <span data-toggle="tooltip" data-placement="top" title="好好学习">宝</span>
+                      <span data-toggle="tooltip" data-placement="top" title="天天向上">贝</span>
+                    </div>
+                    <div>8</div>
+                    <div>年利率</div>
+                  </div>
+                </a>
+              </div>
+
+              <!-- 红色 体验.cart_exp -->
+              <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                <a class="cart_default cart_exp" href="javascript:;">
+                  <span class="wjsfont wjsfont-e915"></span>
+                  <!-- 左侧 主要内容 宽度 变化的 -->
+                  <div class="cart_main">
+                    <!-- text-center 文本中间显示   -->
+                    <h4 class="text-center">新手体验1002期</h4>
+                    <div class="cart_des clearfix">
+                      <!-- 左 -->
+                      <div class="pull-left">
+                        <div>起投金额</div>
+                        <div>0.01万</div>
+                        <div>借款期限</div>
+                        <div>10天</div>
+                      </div>
+                      <!-- 右 -->
+                      <div class="pull-right text-right">
+                        <div>起投金额</div>
+                        <div>0.01万</div>
+                        <div>借款期限</div>
+                        <div>10天</div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 右侧 年利率 固定死高度和高度 -->
+                  <div class="rate">
+                    <div>8</div>
+                    <div>年利率</div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div role="tabpanel" class="tab-pane" id="profile">..3.</div>
+        <div role="tabpanel" class="tab-pane" id="messages">.4..</div>
+        <div role="tabpanel" class="tab-pane" id="settings">.5..</div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- ctrl+k ctrl+0 全部展开  -->
+  <!-- ctrl+k ctrl+1 折叠一层  -->
+  <!-- ctrl+k ctrl+2 折叠一层  -->
+
+  <!-- 新闻 -->
+  <div class="wjs_news">
+    <div class="container">
+      <div class="row">
+        <!-- 5 2 5  -->
+        <div class="col-lg-2  col-lg-offset-3 col-md-2 col-md-offset-3  ">
+          <div class="news">
+            全部新闻
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-2">
+          <!-- 标题 -->
+          <div class="news_title">
+            <!-- 虚线 -->
+            <div class="line hidden-sm hidden-xs "></div>
+      
+              <ul class="row"  role="tablist">
+                  <li class="active col-lg-12 col-md-12 col-sm-3 col-xs-3" role="presentation"><a href="#news_home" aria-controls="news_home" role="tab" data-toggle="tab"><span class="wjsfont wjsfont-new01 "></span></a></li>
+                  <li class="col-lg-12 col-md-12 col-sm-3 col-xs-3" role="presentation"><a href="#news_profile" aria-controls="news_profile" role="tab" data-toggle="tab"><span class="wjsfont wjsfont-new02 "></span></a></li>
+                  <li class="col-lg-12 col-md-12 col-sm-3 col-xs-3" role="presentation"><a href="#news_messages" aria-controls="news_messages" role="tab" data-toggle="tab"><span class="wjsfont wjsfont-new03 "></span></a></li>
+                  <li class="col-lg-12 col-md-12 col-sm-3 col-xs-3" role="presentation"><a href="#news_settings" aria-controls="news_settings" role="tab" data-toggle="tab"><span class="wjsfont wjsfont-new04 "></span></a></li>
+                </ul>
+          </div>
+        </div>
+        <div class="col-lg-5 col-md-5">
+          <!-- 内容 -->
+          <div class="news_content">
+              <div class="tab-content">
+                  <div role="tabpanel" class="tab-pane active" id="news_home">
+                      <ul class="list-group">
+                          <li class="list-group-item"><a href="javascript:;">2016-9-19【微还款】一周还款公告2016年1月18日-1月24日</a></li>
+                          <li class="list-group-item">Dapibus ac facilisis in</li>
+                          <li class="list-group-item">Morbi leo risus</li>
+                          <li class="list-group-item">Porta ac consectetur ac</li>
+                          <li class="list-group-item">Vestibulum at eros</li>
+                        </ul>
+                  </div>
+                  <div role="tabpanel" class="tab-pane" id="news_profile">.2..</div>
+                  <div role="tabpanel" class="tab-pane" id="news_messages">..3.</div>
+                  <div role="tabpanel" class="tab-pane" id="news_settings">..4.</div>
+                </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="wjs_footer text-center">
+    <h1>和这些单位都有合作哦</h1>
+    <div>
+        <a href="javascript:;"><span class="wjsfont wjsfont-partner01"></span></a>
+        <a href="javascript:;"><span class="wjsfont wjsfont-partner02"></span></a>
+        <a href="javascript:;"><span class="wjsfont wjsfont-partner03"></span></a>
+        <a href="javascript:;"><span class="wjsfont wjsfont-partner04"></span></a>
+        <a href="javascript:;"><span class="wjsfont wjsfont-partner05"></span></a>
+        <a href="javascript:;"><span class="wjsfont wjsfont-partner06"></span></a>
+        <a href="javascript:;"><span class="wjsfont wjsfont-partner07"></span></a>
+        <a href="javascript:;"><span class="wjsfont wjsfont-partner08"></span></a>
+        <a href="javascript:;"><span class="wjsfont wjsfont-partner09"></span></a>
+    </div>
+  </footer>
+
+  
+  <script src="./lib/js/jquery.v1.12.4.js"></script>
+  <script src="./lib/js/bootstrap.js"></script>
+  <script src="./js/index.js"></script>
+</body>
+
+</html>
